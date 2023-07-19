@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mete_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-18 11:00:40 &#214;&#214;"/>
+        <attribute name="created" value="bWV0ZV87TUVURTsyMDIzLTA3LTE4OzEwOjQzOjMwIMOWw5Y7MjM3MA=="/>
+        <attribute name="edited" value="bWV0ZV87TUVURTsyMDIzLTA3LTE4OzExOjAwOjQwIMOWw5Y7MjsyNDc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <output expression="&quot;iki tane say&#305; giriniz&quot;" newline="True"/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <if expression="x&gt;y">
+                <then>
+                    <output expression="&quot;birinci sayi b&#252;y&#252;k = &quot; &amp; x" newline="True"/>
+                    <output expression="x-y" newline="True"/>
+                </then>
+                <else>
+                    <if expression="x==y">
+                        <then>
+                            <output expression="&quot;sayilar esit&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;ikinci sayi b&#252;y&#252;k = &quot; &amp; y" newline="True"/>
+                        </else>
+                    </if>
+                    <output expression="y-x" newline="True"/>
+                </else>
+            </if>
+            <comment text="bitti"/>
+        </body>
+    </function>
+</flowgorithm>

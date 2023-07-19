@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mete_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-18 12:08:54 &#214;S"/>
+        <attribute name="created" value="bWV0ZV87TUVURTsyMDIzLTA3LTE4OzExOjM0OjUxIMOWw5Y7MjM3NA=="/>
+        <attribute name="edited" value="bWV0ZV87TUVURTsyMDIzLTA3LTE4OzEyOjA4OjU0IMOWUzsxOzIzNTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="uzun, k&#305;sa, sonuc" type="Integer" array="False" size=""/>
+            <output expression="&quot;dikd&#246;rtgenin k&#305;sa kenar&#305;n&#305; girin&quot;" newline="True"/>
+            <input variable="k&#305;sa"/>
+            <while expression="k&#305;sa &lt; 0">
+                <output expression="&quot;tekrar giriniz&quot;" newline="True"/>
+                <input variable="k&#305;sa"/>
+            </while>
+            <output expression="&quot;dikd&#246;rtgenin uzun kenar&#305;n&#305; girin&quot;" newline="True"/>
+            <input variable="uzun"/>
+            <while expression="uzun &lt; 0">
+                <output expression="&quot;tekrar giriniz&quot;" newline="True"/>
+                <input variable="uzun"/>
+            </while>
+            <if expression="uzun &gt; k&#305;sa">
+                <then>
+                    <assign variable="sonuc" expression="uzun * k&#305;sa"/>
+                    <output expression="sonuc" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;uzunluklar&#305; yanl&#305;&#351;&quot;" newline="True"/>
+                    <while expression="k&#305;sa &gt; uzun &amp;&amp; k&#305;sa&gt;0 &amp;&amp; uzun&gt;0">
+                        <output expression="&quot;tekrar giriniz&quot;" newline="True"/>
+                        <input variable="k&#305;sa"/>
+                        <output expression="&quot;tekrar giriniz&quot;" newline="True"/>
+                        <input variable="k&#305;sa"/>
+                    </while>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

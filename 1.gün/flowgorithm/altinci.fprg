@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mete_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-19 09:33:22 &#214;&#214;"/>
+        <attribute name="created" value="bWV0ZV87TUVURTsyMDIzLTA3LTE4OzEyOjI0OjE3IMOWUzsyMjQ1"/>
+        <attribute name="edited" value="bWV0ZV87TUVURTsyMDIzLTA3LTE5OzA5OjMzOjIyIMOWw5Y7OTsyNDk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sifre, bloke, flag" type="Integer" array="False" size=""/>
+            <declare name="id" type="String" array="False" size=""/>
+            <assign variable="id" expression="&quot;admin&quot;"/>
+            <assign variable="sifre" expression="123"/>
+            <assign variable="flag" expression="0"/>
+            <assign variable="bloke" expression="3"/>
+            <while expression="flag == 0 || ((id != &quot;admin&quot; &amp;&amp; sifre != 123) &amp;&amp; bloke == 1)">
+                <output expression="&quot;id giriniz :&quot;" newline="True"/>
+                <input variable="id"/>
+                <output expression="&quot;sifre giriniz&quot;" newline="True"/>
+                <input variable="sifre"/>
+                <assign variable="bloke" expression="bloke - 1"/>
+                <output expression="bloke &amp; &quot;deneme hakk&#305;n&#305;z kald&#305;&quot;" newline="True"/>
+                <if expression="bloke == 0">
+                    <then>
+                        <assign variable="flag" expression="1"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <if expression="bloke == 0">
+                <then>
+                    <output expression="&quot;giri&#351; ba&#351;ar&#305;l&#305;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;&#351;ifreniz bloke oldu&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

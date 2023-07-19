@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mete_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-18 12:42:25 &#214;S"/>
+        <attribute name="created" value="bWV0ZV87TUVURTsyMDIzLTA3LTE4OzEyOjA4OjU3IMOWUzsyMjUx"/>
+        <attribute name="edited" value="bWV0ZV87TUVURTsyMDIzLTA3LTE4OzEyOjQyOjI1IMOWUzszOzIzNTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s1, s2, s3, s4, s5, toplam, ort" type="Real" array="False" size=""/>
+            <assign variable="toplam" expression="1"/>
+            <output expression="&quot;sayi miktar&#305;n&#305; giriniz&quot;" newline="True"/>
+            <input variable="s2"/>
+            <for variable="s1" start="1" end="s2" direction="inc" step="1">
+                <assign variable="toplam" expression="toplam * s1"/>
+            </for>
+            <assign variable="ort" expression="toplam/s2"/>
+            <output expression="&quot;Toplam: &quot; &amp; toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

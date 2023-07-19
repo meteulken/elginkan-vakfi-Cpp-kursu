@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mete_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-18 11:34:49 &#214;&#214;"/>
+        <attribute name="created" value="bWV0ZV87TUVURTsyMDIzLTA3LTE4OzExOjAwOjQ3IMOWw5Y7MjM3Mg=="/>
+        <attribute name="edited" value="bWV0ZV87TUVURTsyMDIzLTA3LTE4OzExOjM0OjQ5IMOWw5Y7MTsyNDg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;N kadar say&#305; girilen&quot;" newline="True"/>
+            <declare name="fonk" type="Integer" array="False" size=""/>
+            <declare name="toplam, sayi1, sayi2, n, sayac" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="sayac" expression="1"/>
+            <assign variable="toplam" expression="0"/>
+            <while expression="sayac &lt;= n">
+                <assign variable="toplam" expression="toplam + sayac"/>
+                <assign variable="sayac" expression="sayac + 1"/>
+            </while>
+            <output expression="toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
