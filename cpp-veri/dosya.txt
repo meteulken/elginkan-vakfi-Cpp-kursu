@@ -30,7 +30,7 @@ gumushane
 hakkari
 hatay
 isparta
-icel (mersin)
+mersin
 istanbul
 izmir
 kars

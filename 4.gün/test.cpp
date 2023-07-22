@@ -2,30 +2,35 @@
 #include <fstream>
 #include <string>
 
+using namespace std;
 
 int main() {
-    std::ifstream dosya("dosya.txt");
-    std::string il;
+
+    string dosya_cek;
+    cout << "Dosya adini giriniz: ";
+    cin >> dosya_cek;
+    ifstream dosya(dosya_cek);
+    string il;
 
     if (!dosya) {
-        std::cerr << "Dosya acilamadi." << std::endl;
+        cerr << "Dosya acilamadi." << endl;
         return 1;
     }
 
     int satir_no;
     
-    std::cout << "Plaka kodunuz giriniz ? (1-81): ";
-    std::cin >> satir_no;
+    cout << "Plaka kodunuz giriniz ? (1-81): ";
+    cin >> satir_no;
 
     if (satir_no >= 1 && satir_no <= 81) {
         int satir_sayisi = 1;
-        while (std::getline(dosya, il) && satir_sayisi < satir_no) {
+        while (getline(dosya, il) && satir_sayisi < satir_no) {
             satir_sayisi++;
         }
 
-        std::cout << "(" << satir_no << ". Plaka): " << il << std::endl;
+        cout << "(" << satir_no << ". Plaka): " << il << endl;
     } else {
-        std::cout << "Gecersiz satir numarasi." << std::endl;
+        cout << "Gecersiz satir numarasi." << endl;
     }
 
     dosya.close();
