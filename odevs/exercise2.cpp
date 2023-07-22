@@ -28,7 +28,7 @@ int main()
 
     cout << "Final notunuzu giriniz: ";
     cin >> final;
-    final_ort = ((final * 0.6) + (vize_ort * 0.4));
+    final_ort = ((final * 0.6) + vize_ort);
 
     cout << "Ortalamaniz: " << final_ort << endl;
     cout << "----------------------------" << endl;

@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-// ! Girilen sayının faktoriyelini hesapalyan programı yazınız.
+// ! Girilen sayının faktoriyelini hesaplayan programı yazınız.
 // * örn: Hangi sayinin faktoryeli hesaplanacak? 5
 // * örn: Hesaplanan Faktoryel= 120
 
