@@ -1,3 +1,5 @@
+// Mete Ülken CPP Odevi Sorulari
+
 1- Klavyeden girilen vize notuna göre finalden en az kaç almanız gerektiğini söyleyen program yazınız.
 %60 final
 %40 vize
