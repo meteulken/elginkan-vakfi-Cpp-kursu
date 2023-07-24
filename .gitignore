@@ -1,6 +1,11 @@
 # Prerequisites
 *.d
 
+/odevs
+/mete-ulken.zip
+/mete-ulken-cpp-odev.zip
+*.zip
+
 # Compiled Object files
 *.slo
 *.lo
