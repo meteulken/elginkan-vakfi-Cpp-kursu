@@ -5,8 +5,18 @@ using namespace std;
 
 int main()
 {
-    int s1 = 0;
-    int s2 = 0;
+    int i = 0;
+    int faktor = 1;
+    int sayi;
 
-    
+    cout << "Faktoriyeli alinacak sayiyi giriniz: "; cin >> sayi;
+
+    while(i < sayi)
+    {
+        i++;
+        faktor *= i;
+        
+    }
+
+
 }
