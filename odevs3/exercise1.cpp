@@ -2,6 +2,7 @@
 
 using namespace std;
 
+
 // Kullanıcıdan 3 dersin notlarını alıp, ortalamalarını hesaplayan ve ekrana yazdıran programı yazınız.
 // Mete Ülken CPP Ödev 3
 
