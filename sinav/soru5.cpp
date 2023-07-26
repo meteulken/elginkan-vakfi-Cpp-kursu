@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// Mete Ülken C++ Programlama Geliştirme ve Uyum Eğitimi Uygulama Sınavı Cevapları
+
 int main()
 {
     int sayi = 0;
