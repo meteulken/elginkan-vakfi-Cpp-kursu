@@ -17,31 +17,31 @@ int main()
     {
     case 1:
         cout << "Dairenin yaricapini giriniz : ";
-        int yaricap;
+        float yaricap;
         cin >> yaricap;
         cout << "Dairenin alani : " << PI * yaricap * yaricap << endl;
         break;
     case 2:
         cout << "Karenin bir kenarini giriniz : ";
-        int kenar;
+        float kenar;
         cin >> kenar;
         cout << "Karenin alani : " << kenar * kenar << endl;
         break;
     case 3:
         cout << "Dikdortgenin bir kenarini giriniz : ";
-        int kenar1;
+        float kenar1;
         cin >> kenar1;
         cout << "Dikdortgenin diger kenarini giriniz : ";
-        int kenar2;
+        float kenar2;
         cin >> kenar2;
         cout << "Dikdortgenin alani : " << kenar1 * kenar2 << endl;
         break;
     case 4:
         cout << "Ucgenin tabanini giriniz : ";
-        int taban;
+        float taban;
         cin >> taban;
         cout << "Ucgenin yuksekligini giriniz : ";
-        int yukseklik;
+        float yukseklik;
         cin >> yukseklik;
         cout << "Ucgenin alani : " << taban * yukseklik / 2 << endl;
         break;
