@@ -28,7 +28,9 @@ class Sinema{
     {
         toplamKoltukSayisi = koltuksay;
         salonNo = salon_no;
-        bosKoltukSayisi = koltuksay;
+        bosKoltukSayisi = toplamKoltukSayisi;
+        bakiye = 0;
+        salonMevcut++;
     }
 
     int SalonKontrol()
