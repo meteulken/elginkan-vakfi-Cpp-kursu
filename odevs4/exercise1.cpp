@@ -4,12 +4,12 @@
 
 using namespace std;
 
-int varmi(int dizi[], int boyut, int aranan)
+int varmi(int dizi[], int boyut, int aranan[])
 {
     int i = 0;
     for (i = 0; i < boyut; i++)
     {
-        if (dizi[i] == aranan)
+        if (dizi[i] == aranan[0])
         {
             return 1;
         }
@@ -17,19 +17,6 @@ int varmi(int dizi[], int boyut, int aranan)
     return 0;
 }
 
-int varmi(int dizi[], int boyut, int aranan)
-{
-    int i = 0;
-    while(i < boyut)
-    {
-        if(dizi[i] == aranan)
-        {
-            return 1;
-        }
-        i++;
-    }
-    return 0;
-}
 
 
 int main()
@@ -95,7 +82,7 @@ int main()
 
         while(i < 4)
         {
-            if(varmi(dizi[i], 4, thmnDizi[j]))
+            if(varmi(dizi[], 4, thmnDizi[]))
             {
                 cout << "Eslesen sayi var : " << dizi[i] << endl;
             }
