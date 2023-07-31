@@ -40,7 +40,7 @@ int main()
     dizi[2] = rndS3;
     dizi[3] = rndS4;
 
-    cout << rndS1 << rndS2 << rndS3 << rndS4 << endl;
+    // cout << rndS1 << rndS2 << rndS3 << rndS4 << endl; test amaçlı
 
     while (hak < 10 && !sayiBulundu)
     {
