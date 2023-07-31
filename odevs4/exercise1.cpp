@@ -26,6 +26,8 @@ int main()
     int tahmin;
     int thmnDizi[4];
     int hak = 0;
+    int artiSayi = 0;
+    int eksiSayi = 0;
     bool sayiBulundu = false; // Sayı bulunduğunda true olacak değişken
 
     srand(time(NULL));
@@ -35,16 +37,16 @@ int main()
     rndS3 = (rand() % 10);
     rndS4 = (rand() % 10);
 
+    // cout << rndS1 << rndS2 << rndS3 << rndS4 << endl; test amaçlı
+
     dizi[0] = rndS1;
     dizi[1] = rndS2;
     dizi[2] = rndS3;
     dizi[3] = rndS4;
 
-    // cout << rndS1 << rndS2 << rndS3 << rndS4 << endl; test amaçlı
-
     while (hak < 10 && !sayiBulundu)
     {
-        cout << "Tahmininizi giriniz: ";
+        cout << hak + 1 << ". hak Sayiyi Giriniz : ";
         cin >> tahmin;
 
         thmnDizi[0] = tahmin / 1000;
@@ -52,24 +54,24 @@ int main()
         thmnDizi[2] = tahmin / 10 % 10;
         thmnDizi[3] = tahmin % 10;
 
-        int dogruYer = 0;
-        int yanlisYer = 0;
+        artiSayi = 0;
+        eksiSayi = 0;
 
         for (int i = 0; i < 4; i++)
         {
             if (dizi[i] == thmnDizi[i])
             {
-                dogruYer++;
+                artiSayi++;
             }
             else if (varmi(dizi, 4, thmnDizi[i]))
             {
-                yanlisYer++;
+                eksiSayi++;
             }
         }
 
-        cout << "-> -" << yanlisYer << " , +" << dogruYer << endl;
+        cout << "-" << eksiSayi << " , +" << artiSayi << endl;
 
-        if (dogruYer == 4)
+        if (artiSayi == 4)
         {
             sayiBulundu = true;
         }
@@ -77,17 +79,15 @@ int main()
         hak++;
     }
 
-    // Oyun bittiğinde sonucu göster
+    // Oyun bittiğinde sonucu göster ve puanı hesapla
     if (sayiBulundu)
     {
-        cout << "Tebrikler, sayiyi buldunuz!" << endl;
-        int puan = 10 - hak + 1;
-        cout << "Puaniniz: " << puan << endl;
+        int puan = 10 * artiSayi + 5 * eksiSayi + (1.0 / hak) * 1000 - ((artiSayi + eksiSayi) * 1.0 / (artiSayi + eksiSayi + 1));
+        cout << "Bravo bildiniz. Puaniniz : " << puan << endl;
     }
     else
     {
-        cout << "Maalesef, sayiyi bulamadiniz." << endl;
-        cout << "Puaniniz: 0" << endl;
+        cout << "Maalesef kaybettiniz." << endl;
     }
 
     return 0;
