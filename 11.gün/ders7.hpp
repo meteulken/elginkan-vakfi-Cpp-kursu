@@ -12,14 +12,21 @@ class VKI
         VKI();
         VKI(string, int, int);
         ~VKI();
-        void setAd(string);
-        void setKilo(int);
-        void setBoy(int);
-        string getAd();
-        int getKilo();
+
+        string getIsım();  
         int getBoy();
-        void vkiHesapla();
-        void durumYazdir();
+        double getAgirlik();
+
+        void setIsim(string);
+        void setBoy(int);
+        void setKilo(int);
+
+        double hesaplaVK();
+
+        private:
+        string yeniIsim;
+        double yeniBoy;
+        double yeniAgirlik;
 
 };
 
