@@ -11,3 +11,4 @@ int main()
     sonuc = kare(n);
     cout << "Sayinin karesi : " << sonuc << endl;
 }
+
