@@ -24,5 +24,5 @@ int main()
     } 
     while (c == 'e' || c == 'E');
 
-    coutt << "Program sonlandirildi." << endl;   
+    cout << "Program sonlandirildi." << endl;   
 }
